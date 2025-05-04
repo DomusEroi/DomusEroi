@@ -1,0 +1,47 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+.hero {
+  background-image: url('images/soggiorno.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20vh 10%;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  background: #c59d5f;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.section {
+  padding: 60px 10%;
+}
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+footer {
+  background: #f4f4f4;
+  padding: 40px 10%;
+  text-align: center;
+}
