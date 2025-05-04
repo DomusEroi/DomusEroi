@@ -1,100 +1,149 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domus Eroi - Luxury Stay in Rome</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Georgia', serif;
-            background-color: #fff;
-            color: #333;
-        }
-        header {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            background-color: #000;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.25rem;
-            margin: 1rem 0;
-        }
-        .btn {
-            background: gold;
-            color: black;
-            padding: 1em 2em;
-            margin: 0.5em;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        section {
-            padding: 3rem 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-        }
-        .features div {
-            flex: 1;
-            margin: 1rem;
-        }
-        footer {
-            background: #f5f5f5;
-            padding: 2rem;
-            text-align: center;
-            font-size: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domus Eroi - Residenza di Lusso a Roma</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+      background-color: #fff;
+    }
+    header {
+      background-image: url('soggiorno-divano.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    nav {
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      margin-left: 2rem;
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #111;
+      color: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 0.75rem 1.5rem;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Domus Eroi</h1>
-        <p>Your Roman Retreat for the Elite</p>
-        <a href="#gallery" class="btn">View Gallery</a>
-        <a href="#contact" class="btn">Contact Us</a>
-    </header>
-    <section>
-        <h2 style="text-align:center;">Discreet Luxury in the Heart of Rome</h2>
-        <div class="features">
-            <div>
-                <h3>🏛 Prime Location</h3>
-                <p>Steps away from Rome’s most iconic landmarks.</p>
-            </div>
-            <div>
-                <h3>🛎 Concierge Services</h3>
-                <p>Tailored experiences and 24/7 assistance.</p>
-            </div>
-            <div>
-                <h3>🛏 Elegant Comfort</h3>
-                <p>Designer interiors for restful stays.</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:domuseroi@gmail.com">domuseroi@gmail.com</a></p>
-        <p>Phone: <a href="tel:+393924323985">+39 392 432 3985</a></p>
-    </section>
-    <footer>
-        &copy; 2025 Domus Eroi. All rights reserved.
-    </footer>
+  <nav>
+    <div><strong>Domus Eroi</strong></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </div>
+  </nav>
+  <header>
+    <h1>Domus Eroi<br>Eleganza e comfort nel cuore di Roma</h1>
+  </header>
+
+  <section>
+    <h2>Benvenuti</h2>
+    <p>Domus Eroi è una residenza di pregio situata a pochi minuti dal Vaticano, pensata per soddisfare le esigenze di viaggiatori esigenti, famiglie e lavoratori in trasferta. L’appartamento offre spazi raffinati, comfort moderni e una vista impareggiabile su Roma.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Galleria Fotografica</h2>
+    <div class="gallery">
+      <img src="camera-matrimoniale-1.jpg" alt="Camera matrimoniale 1">
+      <img src="camera-matrimoniale-2.jpg" alt="Camera matrimoniale 2">
+      <img src="soggiorno-divano.jpg" alt="Soggiorno con divano letto">
+      <img src="cucina.jpg" alt="Cucina moderna">
+      <img src="camera-singola.jpg" alt="Camera singola con cabina armadio">
+      <img src="bagno.jpg" alt="Bagno con doccia walk-in">
+      <img src="terrazza-1.jpg" alt="Terrazza con vista">
+      <img src="terrazza-2.jpg" alt="Terrazza panoramica">
+    </div>
+  </section>
+
+  <section>
+    <h2>La Posizione</h2>
+    <p style="text-align:center">Piazzale degli Eroi, Roma – a pochi passi dal Vaticano.</p>
+    <div style="text-align:center; margin: 2rem 0;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.0739349840894!2d12.445824476312282!3d41.907497162043846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f605b0308d75f%3A0x47eab25e25ecb52d!2sPiazzale%20degli%20Eroi%2C%20Roma%20RM!5e0!3m2!1sit!2sit!4v1714833000000!5m2!1sit!2sit" width="100%" height="450" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>📧 <strong>Email:</strong> <a href="mailto:domuseroi@gmail.com">domuseroi@gmail.com</a><br>
+       📞 <strong>Telefono:</strong> <a href="tel:+393924323985">+39 392 432 3985</a></p>
+    <form action="mailto:domuseroi@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Nome" placeholder="Nome" required>
+      <input type="email" name="Email" placeholder="Email" required>
+      <textarea name="Messaggio" placeholder="Scrivi il tuo messaggio" rows="5" required></textarea>
+      <button type="submit">Invia Richiesta</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Domus Eroi – All rights reserved.</p>
+  </footer>
 </body>
 </html>
